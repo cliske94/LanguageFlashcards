@@ -7,3 +7,6 @@ This is a Java desktop application, complete with a Swing GUI and a database con
 from six variations of a flashcard language learning game. This project uses a custom implementation of the Java Map interface and uses the facade OOP design pattern. Depending on the button pressed on the initial GUI frame, the user is provided flashcards with 
 words in English, italian, or German and the user has a few seconds to type the translation before the flashcard is locked and the 
 answer is displayed. Correct entries increase the tally in the top corner.
+
+<h1> Plans </h1>
+This needs to have the database included in the build process, so that the production executable can be run on its own.

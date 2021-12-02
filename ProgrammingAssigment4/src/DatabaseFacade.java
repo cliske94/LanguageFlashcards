@@ -1,12 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- *
- * @author clisk
+ * @author Cody Liske
  */
 public class DatabaseFacade {
     
@@ -15,16 +8,12 @@ public class DatabaseFacade {
     
     public static String translateEnglishSpanish(String toTranslate)
     {
-       // System.out.println(toTranslate);
-        //System.out.println(database.getSpanishDictionary().toString());
-        //System.out.println(database.getSpanishDictionary().get(toTranslate));
         return database.getSpanishDictionary().get(toTranslate) + "";
     }
     
     public static String translateSpanishEnglish(String toTranslate)
     {
         System.out.println(toTranslate);
-        //System.out.println(database.getSpanishDictionary().toString());
         System.out.println(database.getSpanishDictionary().getKey(toTranslate));
         return database.getSpanishDictionary().getKey(toTranslate) + "";
     }

@@ -1,18 +1,11 @@
+/**
+ * @author Cody Liske
+ */
 
 import java.util.ArrayList;
 import java.util.Dictionary;
 import java.util.Enumeration;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author clisk
- */
 public class TranslationDictionary extends Dictionary {
     
     private ArrayList<String> wordBank1 = new ArrayList<String>();

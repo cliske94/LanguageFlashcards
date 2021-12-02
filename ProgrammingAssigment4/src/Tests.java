@@ -1,16 +1,13 @@
+/**
+ * @author Cody Liske
+ */
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
  //This class was used, and can still be used, for testing individual components as they are built
 
-
-/**
- *
- * @author clisk
- */
 //public class Tests {
 //    
 //    public static void main(String[] args)

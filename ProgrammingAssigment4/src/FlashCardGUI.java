@@ -1,3 +1,6 @@
+/**
+ * @author Cody Liske
+ */
 
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
@@ -18,16 +21,6 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.Timer;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author clisk
- */
 public class FlashCardGUI extends JFrame {
 
     private JLabel outputArea;
@@ -77,9 +70,7 @@ public class FlashCardGUI extends JFrame {
         layoutConst = new GridBagConstraints();
         layoutConst.gridx = 0;
         layoutConst.gridy = 2;
-        //layoutConst.insets = new Insets(15,5,10,5);
         super.add(currentWord, layoutConst);
-        //currentWord.setText("");
         
         tallies = new JLabel();
         layoutConst = new GridBagConstraints();
@@ -151,23 +142,19 @@ public class FlashCardGUI extends JFrame {
                 case "CHECK":
                     timer.stop();
                     userInput.setEditable(false);
-                    //randomizer = generator.getRandomI();
                     String correct = translator.translate(targetLanguage, beginLanguage, currentWord.getText(), reverseFlag);
                     reverseFlag = !reverseFlag;
                     if (userInput.getText().toUpperCase().equals(correct.toUpperCase()))
                     {
-                        //JOptionPane.showMessageDialog(FlashCardGUI.this, "Correct");
                         correctAns++;
                         tallies.setText("Correct: " + correctAns + " Incorrect: " + incorrectAns);
                         outputArea.setText("Correct!");
                     } else
                     {
-                        //JOptionPane.showMessageDialog(FlashCardGUI.this, "Incorrect. Correct answer is " + correct);
                         incorrectAns++;
                         tallies.setText("Correct: " + correctAns + " Incorrect: " + incorrectAns);
                         outputArea.setText("Incorrect! Answer: " + correct);
                     }
-                    //timer.setInitialDelay(5);
                     
                     timer.restart();
                     break;
@@ -204,7 +191,6 @@ public class FlashCardGUI extends JFrame {
                             {
                                 case SPANISH:
                                     randomizer = generator.getRandomI();
-                                    //System.out.println(randomizer);
                                     if (randomizer == 1) 
                                     {
                                         currentWord.setText(DatabaseFacade.getSpanishWord());

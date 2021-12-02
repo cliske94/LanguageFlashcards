@@ -1,12 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- *
- * @author clisk
+ * @author Cody Liske
  */
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -22,10 +15,6 @@ public class DictionaryConstruction {
         Spanish = extraction.Spanish();
         German = extraction.German();
         Italian = extraction.Italian();
-//        English.add("");
-//        Spanish.add("");
-//        German.add("");
-//        Italian.add("");
     }
     
     public ArrayList<String> getEnglish()
@@ -134,12 +123,6 @@ public class DictionaryConstruction {
             if (fileScnr.hasNext())
             {
                 aux = fileScnr.nextLine();
-//                if (aux.contains("or"))
-//                {
-//                    words.add(aux.substring(0,aux.indexOf(" or ")));
-//                    words.add(aux.substring(aux.indexOf(" or ") + 3));
-//                    return "MaleOrFemale";
-//                }
             } else return null;
             return aux;
         }

@@ -1,16 +1,8 @@
-
+/**
+ * @author Cody Liske
+ */
 import java.util.ArrayList;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author clisk
- */
 public class Dictionaries {
     
     private TranslationDictionary englishToSpanish;
@@ -20,18 +12,13 @@ public class Dictionaries {
     
     public Dictionaries()
     {
-        //System.out.println("Did we get here?");
         constructor = new DictionaryConstruction();
         englishToSpanish = new TranslationDictionary(constructor.getEnglish(), constructor.getSpanish());
-        //System.out.println("Did we get here?");
         englishToGerman = new TranslationDictionary(constructor.getEnglish(), constructor.getGerman());
         englishToItalian = new TranslationDictionary(constructor.getEnglish(), constructor.getItalian());
-//        System.out.println(englishToSpanish.toString());
-//        System.out.println(englishToGerman.toString());
 //        this.setGerman(constructor.getEnglish(), constructor.getGerman());
 //        this.setSpanish(constructor.getEnglish(), constructor.getSpanish());
 //        this.setItalian(constructor.getEnglish(), constructor.getItalian());
-//        System.out.println("Did we get here?");
     }
     
     private void setSpanish(ArrayList<String> english, ArrayList<String> spanish)
@@ -47,7 +34,6 @@ public class Dictionaries {
         for (int i = 0; i < english.size(); i++)
         {
             englishToGerman.put(english.get(i), german.get(i));
-            //System.out.println("Test");
         }
     }
     

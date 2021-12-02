@@ -1,12 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  *
- * @author clisk
+ * @author Cody Liske
  */
 public class Translator {
     
@@ -22,7 +16,6 @@ public class Translator {
                 switch (targetLanguage)
                 {
                     case SPANISH:
-                        //System.out.println(randomizer + "");
                         if (database.getSpanishDictionary().baseLanguage(toTranslate))
                         {
                             return DatabaseFacade.translateEnglishSpanish(toTranslate);

@@ -9,5 +9,5 @@ words in English, italian, or German and the user has a few seconds to type the 
 answer is displayed. Correct entries increase the tally in the top corner.
 
 <h1> Plans </h1>
-I created a windows installer for this program using Inno Compiler, but the splash screen is unprofessional and needs to be changed if I'm to ever push the distributable executables to this repository
+I created a windows installer for this program using Inno Compiler, but the splash screen is unprofessional and needs to be changed if I'm to ever push the distributable executables to this repository\n
 I actually found bugs in this going from another language to English; I have no idea when I'll be motivated to fix them lol
